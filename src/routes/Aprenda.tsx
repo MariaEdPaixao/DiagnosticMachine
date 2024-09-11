@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { CategoriaButton, CategoriaContainer, ContainerCard, IntrodStyle, TituloStyle } from "../styled";
+import { CategoriaButton, CategoriaContainer, ContainerCard, IntrodStyle} from "../styled";
 import CardConteudo from "../components/CardConteudo";
 import { ConteudoProps } from "../types";
+import TituloGeral from "../components/TituloGeral";
 
 const conteudos: ConteudoProps[] = [
   { id: 1, titulo: 'Mecânica básica do automóvel', imagem: '../../public/conteudos/img-post1.png', categoria: 'jogo', descricao: 'Aprenda a consertar carros de forma divertida! Descubra os segredos da mecânica básica enquanto resolve desafios interativos.' },
@@ -28,9 +29,7 @@ export default function Aprenda() {
                 </figure>     
             </IntrodStyle>
 
-            <div className="titulo">
-                <TituloStyle>Conteúdos</TituloStyle>
-            </div>
+            <TituloGeral conteudo="Conteúdos"/>
 
             <CategoriaContainer>
                 <CategoriaButton isSelected={categoriaSelecionada === 'categoria1'} onClick={() => setCategoriaSelecionada('jogo')}>Jogos</CategoriaButton>

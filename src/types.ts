@@ -5,3 +5,7 @@ export type ConteudoProps = {
     categoria: 'video' | 'jogo' | 'artigo';
     descricao: string;
 };
+
+export type TituloProps = {
+    conteudo: string;
+}

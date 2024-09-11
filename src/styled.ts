@@ -445,3 +445,99 @@ export const CategoriaContainer = styled.div`
    border-bottom: 2px solid #ddd; 
    border-radius: 10px;
 `;
+
+export const IntrodAjudaStyle = styled.section`
+   margin-top: 40px;
+   justify-content: center;
+   align-items: center;
+   display: inline-block;
+   position: relative;
+   margin-bottom: 10px;
+
+   #balaodefala{
+      width: 600px;
+      height: 400px;
+      margin-left: 350px;
+   }
+  
+  #container figcaption {
+      width: 345px;
+      position: absolute;
+
+      top: 55px;
+      right: -30px;
+      font-size: 28px;
+      color: black;
+   }
+
+   @media screen and (max-width:1010px){
+      #balaodefala{
+         margin-left: 20%;
+      }
+      #container figcaption {
+         left: 70%;
+         font-size: 28px;
+      }
+   }
+   
+   @media screen and (max-width:800px){
+      #balaodefala{
+         width: 450px;
+         height: 330px;
+      }
+      #container figcaption {
+         font-size: 22px;
+      }
+   }
+
+   @media screen and (max-width: 673px){
+      #balaodefala{
+         width: 360px;
+         height: 260px;
+      }
+      #container figcaption {
+         font-size: 17px;
+         top: 17%;
+      }
+      
+   }
+
+   @media screen and (max-width:613px){
+      #balaodefala{
+         width: 189px;
+         height: 210px;   
+      }
+      #container figcaption {
+         font-size: 13px;
+         left: 60%;
+      }
+
+   }
+   
+`
+
+export const ImgAjuda = styled.div`
+   text-align: center;
+ 
+
+   @media screen and (max-width:821px){
+      .dica{
+         width: 590px;
+      }
+   }
+   @media screen and (max-width:775px){
+      .dica{
+         width: 560px;
+      }
+   }
+   @media screen and (max-width:665px){
+      .dica{
+         width: 450px;
+      }
+   }
+   @media screen and (max-width:545px){
+      .dica{
+         width: 350px;
+      }
+   }
+`
