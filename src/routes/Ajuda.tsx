@@ -1,22 +1,18 @@
-import { ImgAjuda, IntrodAjudaStyle, TituloStyle } from "../styled";
+import IntrodCarlos from "../components/IntrodCarlos";
+import { ImgAjuda, SubtituloStyle } from "../styled";
 
 export default function Ajuda(){
     return(
         <main>
-            <IntrodAjudaStyle>
-                <figure id="container">
-                    <img src="../../public/img/carlos1fala.png" id="balaodefala" />  
-                    <h1><figcaption><b>Algumas dicas:</b></figcaption></h1>
-                </figure>       
-            </IntrodAjudaStyle>
+           <IntrodCarlos conteudo="Algumas dicas para você se informar sobre o seu veículo. E vão te ajudar!"/>
 
-            <TituloStyle>Partes do Carro</TituloStyle>
+            <SubtituloStyle>Partes do Carro</SubtituloStyle>
 
             <ImgAjuda>
                 <img src="../../public/ajuda/partes-do-carro.png" alt="Partes do carro" className="dica"/>
             </ImgAjuda>
 
-            <TituloStyle>Principais Peças</TituloStyle>
+            <SubtituloStyle>Principais Peças</SubtituloStyle>
 
             <ImgAjuda>
                 <img src="../../public/ajuda/principais-pecas.png" alt="Principais Peças do Carro" className="dica"/>
