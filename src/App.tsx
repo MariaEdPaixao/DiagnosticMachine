@@ -9,7 +9,6 @@ function App() {
     <>
       <Cabecalho/>
       <Chat/>
-      
      <Rodape/>
     </>
   )

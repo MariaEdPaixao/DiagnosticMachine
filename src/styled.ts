@@ -1094,10 +1094,11 @@ export const IdentificacaoStyle = styled.section`
       align-content: space-around;
       
 
-      .infos{    
+   .infos{    
       flex: 1 2;
       margin-left: 30px;
    }
+
    .infos hr{
       max-width: 993px;
       margin-left: 1px;
@@ -1157,16 +1158,251 @@ export const DataStyle = styled.section`
    padding: 10px;
 
    @media screen and (max-width: 908px) {
-      font-size: 20px; 
+      font-size: 16px; 
    }
+ 
    @media screen and (max-width: 628px) {
         font-size: 14px;
         width: 118px;
         height: 37px;
+
+        justify-content: center;
+        text-align: center;
+        align-items: center ;
    }
 `
 
+export const ContainerMensagens = styled.div`
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+
+   .message {
+      display: flex;
+      align-items: center;
+      background-color: #d4c5ff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      width: 100%; /* Ajuste automático da largura */
+      max-width: 600px; /* Tamanho máximo da mensagem */
+   }
+
+.chat {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 0px 5px 0px 5px;
+}
+
+.bot-message {
+    align-self: flex-start;
+    justify-content: start;
+    margin-right: 70%;
+}
+
+.user-message {
+    margin-left: 70%;
+    background-color: #b3c7f5;
+}
+
+.message p {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #000;
+}
+
+
+
+   @media (max-width: 1200px) {
+         padding: 10px;
+
+      .message {
+         width: 80%; 
+      }
+      .message p {
+         font-size: 16px;
+      }
+
+      .icon {
+         width: 30px;
+         height: 30px;
+      }
+      .bot-message {
+         margin-right: 60%;
+      }
+
+      .user-message {
+         margin-left: 60%;
+      }
+   }
+   @media (max-width: 1012px) {
+      padding: 10px;
+
+      .message {
+         width: 60%; 
+      }
+      .message p {
+         font-size: 14px;
+      }
+
+      .icon {
+         width: 30px;
+         height: 30px;
+      }
+      .bot-message {
+         margin-right: 50%;
+      }
+
+      .user-message {
+         margin-left: 60%;
+      }
+   }
+   @media (max-width: 940px) {
+      padding: 15px;
+
+      .message {
+         width: 55%; 
+      }
+      .message p {
+         font-size: 13px;
+      }
+
+      .icon {
+         width: 30px;
+         height: 30px;
+      }
+      .bot-message {
+         margin-right: 50%;
+      }
+
+      .user-message {
+         margin-left: 40%;
+      }
+   } 
+
+`
+
+export const InteragirChatStyle = styled.article`
+    display: flex;
+    justify-content: center;
+    background-color: #D4C5FF;
+    width: 100%;
+    height: 97px;
+    padding: 10px;
+    box-shadow: 0px -2px 10px rgba(0,0,0,0.1);
+
+
+      form {
+         margin-top: 20px;
+         width: 100%;
+         max-width: 500px; 
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }  
+
+  
+    #id-entrada {
+      width: 100%; 
+      max-width: 600px; 
+      height: 50px;
+      border-radius: 15px;
+      text-align: center;
+      font-size: 22px;
+      box-shadow: 3px 5px 2px black;
+   }
+
+#enviar {
+    margin-left: 10px;
+    background-image: url(../../public/chat/icon-enviar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 55px;
+    height: 55px;
+    background-size: 65px;
+    border-radius: 77px;
+    cursor: pointer;
+}
+   
+      #id-entrada {
+         flex-grow: 1; 
+         width: 100%;
+         max-width: 800px; 
+         height: 50px;
+         border-radius: 15px;
+         text-align: center;
+         font-size: 22px;
+      }
+
+      #enviar {
+         margin-left: 20px;
+      }
+
+   
+   @media screen and (max-width: 915px){
+    
+      #id-entrada{
+         font-size: 18px;
+      }
+      #enviar{
+         width: 48px;
+         height: 48px;
+      }
+   }
+   @media screen and (max-width: 600px){
+    
+      #id-entrada{
+         font-size: 16px;
+      }
+   }
+
+`
+
 export const ContainerChatStyle = styled.main`
+
+    display: grid;
+    overflow-y: auto;
+
+    grid-auto-rows: 200px;
+    /* grid-template-columns: repeat(auto-fit, 1fr); */
+    grid-template-rows: auto auto 1fr auto;
+    gap:5px;
+    grid-template-areas: 
+    'identificacao identificacao'
+    'dataAtual dataAtual'
+    'falaChatBot  falaChatBot'
+    'falaUser falaUser'
+    'envioMensagem envioMensagem'
+    ;
+
+
+   .identificacao{
+      grid-area: identificacao;
+   }
+   .dataAtual{
+      grid-area: dataAtual;
+   }
+   .bot-message{
+      grid-area: falaChatBot;
+   }
+   .user-message{
+      grid-area: falaUser;
+   }
+   .envioMensagem{
+      grid-area: envioMensagem;
+   }
+
 
 
 
