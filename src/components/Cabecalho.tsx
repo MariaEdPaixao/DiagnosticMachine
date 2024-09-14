@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { HeaderStyle } from "../styled";
 
 export default function Cabecalho(){
@@ -25,15 +26,15 @@ export default function Cabecalho(){
                 </div>
                 <div className="nav-list">
                 <ul>
-                    <li className="nav-item"><a href="#" className="nav-link">Ajuda</a></li>
-                    <li className="nav-item" id="opA"><a href="aprenda.html" className="nav-link">Aprenda +</a></li>
-                    <li className="nav-item"  id="opS"><a href="sobre.html" className="nav-link"> Sobre nós</a></li>
-                    <li className="nav-item"><a href="chat.html" className="nav-link"> Chat</a></li>
+                    <li className="nav-item"><Link to="/ajuda" className="nav-link">Ajuda</Link></li>
+                    <li className="nav-item" id="opA"><Link to="/aprenda+" className="nav-link">Aprenda +</Link></li>
+                    <li className="nav-item"  id="opS"><Link to="/sobre" className="nav-link"> Sobre nós</Link></li>
+                    <li className="nav-item"><Link to="/chat" className="nav-link"> Chat</Link></li>
                 </ul>
                 </div>
                 <div className="perfil">
-                    <a href="../index.html"><p>Perfil</p></a>
-                    <a href="../index.html"><img src="../../public/icones/user-profile.png" alt="perfil"/></a>
+                    <Link to="/"><p>Perfil</p></Link>
+                    <Link to="/"><img src="../../public/icones/user-profile.png" alt="perfil"/></Link>
                 </div>
 
                 <div className="mobile-menu-icon">
@@ -42,15 +43,15 @@ export default function Cabecalho(){
             </nav>
             <div className="mobile-menu">
                 <div className="perfil">
-                    <a href="../index.html"><img src="../../public/icones/user-profile.png" alt="perfil"/></a>
-                    <a href="../index.html"><p>Perfil</p></a>
+                    <Link to="/"><img src="../../public/icones/user-profile.png" alt="perfil"/></Link>
+                    <Link to="/"><p>Perfil</p></Link>
                 </div>
                 <div id="linha"></div>
                 <ul>
-                    <li className="nav-item"><a href="#" className="nav-link">Ajuda</a></li>
-                    <li className="nav-item"><a href="aprenda.html" className="nav-link">Aprenda +</a></li>
-                    <li className="nav-item"><a href="sobre.html" className="nav-link"> Sobre nós</a></li>
-                    <li className="nav-item"><a href="chat.html" className="nav-link"> Chat</a></li>
+                    <li className="nav-item"><Link to="/ajuda" className="nav-link">Ajuda</Link></li>
+                    <li className="nav-item"><Link to="/aprenda+" className="nav-link">Aprenda +</Link></li>
+                    <li className="nav-item"><Link to="/sobre" className="nav-link"> Sobre nós</Link></li>
+                    <li className="nav-item"><Link to="/chat" className="nav-link"> Chat</Link></li>
                 </ul>
             </div>
         </HeaderStyle>

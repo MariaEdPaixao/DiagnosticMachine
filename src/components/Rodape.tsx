@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import { FooterStyle, CopyrightSection } from "../styled";
 
-export default function Rodape(){
+export default function Rodape(){ 
     return(
         <FooterStyle>
             <section id="icons">
@@ -11,18 +12,18 @@ export default function Rodape(){
             <section id="abas">
                 <ul id="footer">
                     <li id="itens-footer" className="opcoes">
-                        <a href="ajuda.html">
+                        <Link to="/ajuda">
                             Ajuda
-                        </a>
+                        </Link>
                     </li>
                     <li className="opcoes">
-                        <a href="aprenda.html">Aprenda + </a>
+                        <Link to="/aprenda+">Aprenda + </Link>
                     </li>
                     <li className="opcoes">
-                        <a href="sobre.html">Sobre nós </a>
+                        <Link to="/sobre">Sobre nós </Link>
                     </li>
                     <li className="opcoes">
-                        <a href="chat.html"> Chat </a>
+                        <Link to="/chat"> Chat </Link>
                     </li>
                 </ul> 
             </section>

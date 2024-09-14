@@ -1,6 +1,6 @@
+import { Outlet } from "react-router-dom"
 import Cabecalho from "./components/Cabecalho"
 import Rodape from "./components/Rodape"
-import Chat from "./routes/Chat"
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Cabecalho/>
-      <Chat/>
+      <Outlet/>
      <Rodape/>
     </>
   )

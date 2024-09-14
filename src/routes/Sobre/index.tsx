@@ -33,7 +33,7 @@ export default function Sobre(){
             </ContainerDevs>
 
             <DivLinks>
-                <h3> Link do repositorio: <a href="https://github.com/MariaEdPaixao/Challenge-2024.git" target="_blank">https://github.com/MariaEdPaixao/Challenge-2024.git</a></h3>
+                <h3> Link do repositorio: <a href="https://github.com/MariaEdPaixao/DiagnosticMachine" target="_blank">https://github.com/MariaEdPaixao/Challenge-2024.git</a></h3>
                 <h3> Link do prototipo: <a href="https://www.figma.com/file/SymOttX6dpdG7rZLFsHLtK/Prototipos?type=design&node-id=0%3A1&mode=design&t=NrUAiifjth09i6Pa-1" target="_blank">https://www.figma.com/file/SymOttX6dpdG7rZLFsHLtK/Prototipos?type=design&node-id=0%3A1&mode=design&t=NrUAiifjth09i6Pa-1</a></h3>
             </DivLinks>
         </main>
