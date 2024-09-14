@@ -1408,3 +1408,46 @@ export const ContainerChatStyle = styled.main`
 
 `
 
+export const Container = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   background-color: #D4C5FF;
+`;
+
+export const Content = styled.div`
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+`;
+
+export const ErrorTitle = styled.h1`
+    font-size: 6rem;
+    color: #1F3E74;
+    margin-bottom: 20px;
+`;
+
+export const Message = styled.p`
+    font-size: 1.5rem;
+    color: #1F3E74;
+    margin-bottom: 30px;
+`;
+
+export const Button = styled.button`
+    background-color: #1F3E74;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0E21A1;
+        box-shadow: 5px 8x 8px 0px rgba(0,0,0,1);
+    }
+`;
