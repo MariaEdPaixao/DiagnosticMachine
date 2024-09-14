@@ -1,13 +1,13 @@
-import CardDevs from "../components/CardDevs";
-import TituloGeral from "../components/TituloGeral";
-import { CardSobreStyle, ContainerDevs, DivLinks, SubtituloStyle} from "../styled";
-import { SobreProps } from "../types";
+import CardDevs from "../../components/CardDevs";
+import TituloGeral from "../../components/TituloGeral";
+import { CardSobreStyle, ContainerDevs, DivLinks, SubtituloStyle} from "../../styled";
+import { SobreProps } from "../../types";
 
 
 const devs: SobreProps[] = [
-    {id: 1, rm_turma: 'RM 555136 | 1TDSPK', nome: 'Larissa Freitas', foto: '../../public/sobre/part/larissa.png', github: 'https://github.com/MariaEdPaixao/DiagnosticMachine.git', linkedin:'#'},
-    {id: 2, rm_turma: 'RM 558832 | 1TDSPK', nome: 'Maria Paixão', foto: '../../public/sobre/part/maria.png', github: 'https://github.com/MariaEdPaixao', linkedin:'https://linkedin.com/in/maria-eduarda-alves-da-paixão-6267a1303'},
-    {id: 3, rm_turma: 'RM 555181 | 1TDSPK', nome: 'Luis Carlos', foto: '../../public/sobre/part/luis.png', github: 'https://github.com/MariaEdPaixao/DiagnosticMachine.git', linkedin:'#'},
+    {id: 1, rm_turma: 'RM 555136 | 1TDSPK', nome: 'Larissa Freitas', foto: '../../../public/sobre/part/larissa.png', github: 'https://github.com/MariaEdPaixao/DiagnosticMachine.git', linkedin:'#'},
+    {id: 2, rm_turma: 'RM 558832 | 1TDSPK', nome: 'Maria Paixão', foto: '../../../public/sobre/part/maria.png', github: 'https://github.com/MariaEdPaixao', linkedin:'https://linkedin.com/in/maria-eduarda-alves-da-paixão-6267a1303'},
+    {id: 3, rm_turma: 'RM 555181 | 1TDSPK', nome: 'Luis Carlos', foto: '../../../public/sobre/part/luis.png', github: 'https://github.com/MariaEdPaixao/DiagnosticMachine.git', linkedin:'#'},
     
   ];
 
@@ -16,7 +16,7 @@ export default function Sobre(){
     return(
         <main>
             <CardSobreStyle>
-                <img src="../../public/sobre/fundo-sobre.png" alt="" id="fundo-sobre"/>
+                <img src="../../../public/sobre/fundo-sobre.png" alt="Fundo azulado" id="fundo-sobre"/>
                 <div id="titulo">
                     <TituloGeral conteudo="Sobre nós: "/>
                 </div>
